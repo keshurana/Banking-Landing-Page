@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+/* Universal styleing */
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font styling */
+html {
+  font-size: 62.5%;
+}
+/* body styling */
+body {
+  height: 100vh;
+  padding: 4rem;
+  position: relative;
+}
+/* navigation bar styling */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10rem;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  color: black;
+}
+
+/* background styling */
+.bg {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+
+.bg img {
+  width: 440px;
+  height: 650px;
+}
+
+.headLine {
+  position: absolute;
+  width: 680px;
+  height: 190px;
+  top: 250px;
+  left: 40px;
+}
+
+.tagLine {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 95px;
+  font-family: "Inter", sans-serif;
+}
+
+.phone {
+  background: url(./Image/Phone.png);
+  position: absolute;
+  width: 523px;
+  height: 611px;
+  right: 12px;
+  top: 50px;
+}
+
+.footer {
+  position: absolute;
+  width: 850px;
+  height: 80px;
+  left: 40px;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bg img {
+    width: 350px;
+    height: 650px;
+  }
+
+  .headLine {
+    position: absolute;
+    width: 500px;
+    height: 190px;
+    top: 250px;
+    left: 40px;
+  }
+
+  .tagLine {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 95px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .footer {
+    position: absolute;
+    width: 500px;
+    height: 80px;
+    left: 40px;
+    top: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-text {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    top: 9rem;
+  }
+
+  .phone {
+    width: 530px;
+    top: 100px;
+  }
+
+  .headLine {
+    width: 350px;
+    top: 210px;
+  }
+
+  .tagLine {
+    font-size: 50px;
+  }
+
+  .footer {
+    top: 750px;
+    width: 700px;
+    justify-content: space-between;
+  }
+}
+
